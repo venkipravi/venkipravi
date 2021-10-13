@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Css Nav</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      /*li {
+        display: inline;
+      }*/
+
+      li a {
+        float: left;
+      }
+      li a {
+        display: block;
+        padding: 10px;
+        background-color: gray;
+        color: white;
+      }
+      li a:hover {
+        background-color: green;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px;
+        rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content{
+          display:block
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css Nav</h1>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <br />
+    <div class="dropdown">
+      <span>Mouse over me</span>
+
+      <div class="dropdown-content">
+        <p>Hello World!</p>
+      </div>
+    </div>
+  </body>
+</html>

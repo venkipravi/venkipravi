@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Header and Footer</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /*Style the Number*/
+      header {
+        background-color: red;
+        padding: 30px;
+
+        text-align: center;
+        font-size: 35px;
+        color: rgb(68, 37, 14);
+      }
+
+      /*Creating a Navigation Design*/
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background-color: rgb(196, 196, 243);
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0px;
+        text-decoration: none;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 30px;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: White;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>HTML/CSS Design</h2>
+    <p>This is a paragraph</p>
+    <p>This is Second paragraph</p>
+
+    <header>
+      <h2>Cities</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Delhi</a>
+          </li>
+          <li>
+            <a href="#">Bangalore</a>
+          </li>
+          <li>
+            <a href="#">Hyderabad</a>
+          </li>
+        </ul>
+        <article>
+          <h1>Delhi</h1>
+          <p>Delhi is capital of India</p>
+        </article>
+      </nav>
+    </section>
+
+    <footer>
+      <p>This is Footer</p>
+    </footer>
+  </body>
+</html>

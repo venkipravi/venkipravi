@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>CSS Advance</title>
+    <style>
+      h1 {
+        text-shadow: 0 0 5px red, 0 0 5px yellow;
+      }
+      .shadow {
+        background: yellow;
+        border: 2px solid black;
+        box-shadow: 0 0 10px green;
+        width: 200px;
+        height: 100px;
+      }
+      .shadow p {
+        padding: 20px;
+      }
+      .shadowTransformed {
+        background: yellow;
+        border: 2px soild black;
+        box-shadow: 0 0 10px green;
+        width: 200px;
+        height: 100px;
+        transform: rotate(-50deg);
+      }
+
+      .shadow2 {
+        background: yellow;
+        border: 2px soild black;
+        box-shadow: 0 0 10px green;
+        width: 200px;
+        height: 100px;
+      }
+
+      .shadow2 p {
+        padding: 20px;
+      }
+
+      .shadowTransformed2 {
+        background: yellow;
+        border: 2px soild black;
+        box-shadow: 0 0 10px green;
+        width: 200px;
+        height: 100px;
+        transform: translate(100px, 30px);
+      }
+      .shadow3 {
+        background: yellow;
+        border: 2px soild black;
+        box-shadow: 0 0 10px green;
+        width: 200px;
+        height: 100px;
+      }
+
+      .shadow3 p {
+        padding: 20px;
+      }
+      .shadowTransformed3 {
+        background: yellow;
+        border: 2px solid black;
+        box-shadow: 0 0 10px green;
+        width: 200px;
+        height: 100px;
+        transform: scale(0.5, 1);
+      }
+
+      .threed {
+        width: 300px;
+        height: 100px;
+        background: yellow;
+        border: 1px solid black;
+        transition: width 2s, height 2s;
+      }
+      .threed:hover {
+        width: 200px;
+        height: 200px;
+      }
+      .threedTransformed {
+        transform: rotateX(150deg);
+        width: 300px;
+        height: 100px;
+        background: yellow;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Shadow</h1>
+
+    <h2>CSS 2D Rotate></h2>
+    <div class="shadow">
+      <p>This is a paragraph</p>
+    </div>
+
+    <div class="shadowTransformed">
+      <p>This is a paragraph</p>
+    </div>
+    <br /><br /><br />
+    <h2>CSS 2D Translate</h2>
+    <div class="shadow2">
+      <p>This is a paragraph</p>
+    </div>
+
+    <div class="shadowTransformed2">
+      <p>This is a paragraph</p>
+    </div>
+    <br /><br /><br />
+    <h2>CSS 2D Scale</h2>
+    <div class="shadow3">
+      <p>This is a paragraph</p>
+    </div>
+    <div class="shadowTransformed3">
+      <p>This is a paragraph</p>
+    </div>
+
+    <br /><br /><br />
+
+    <h2>CSS 3D</h2>
+    <div class="threed">
+      <p>3D</p>
+    </div>
+    <div class="threedTransformed">
+      <p>3D</p>
+    </div>
+  </body>
+</html>

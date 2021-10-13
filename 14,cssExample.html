@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Css Example</title>
+    <style>
+      body {
+        height: 4010px;
+      }
+      div.static {
+        position: static;
+        border: 2px solid green;
+      }
+
+      div.relative {
+        position: relative;
+        /*left: 30px;*/
+        width: 400px;
+        height: 200px;
+        border: 2px solid red;
+      }
+
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        border: 2px solid black;
+      }
+
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 2px solid red;
+      }
+
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: green;
+        color: white;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Css Position Property</h2>
+
+    <div class="static">This is a div with Static Position</div>
+
+    <div class="relative">
+      This is a div with Relative Position
+      <div class="absolute">This is a div with Absolute Position</div>
+    </div>
+
+    <div class="fixed">This is a div with Fixed Position</div>
+
+    <div class="sticky">I am Sticky!</div>
+  </body>
+</html>

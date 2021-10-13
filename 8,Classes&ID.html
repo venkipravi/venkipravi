@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>HTML Classes And ID</title>
+    <style>
+      .city {
+        background-color: blue;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      .city h2,
+      p {
+        font-family: sans-serif;
+      }
+      .note {
+        color: red;
+        font-size: 24px;
+      }
+      #myHeader {
+        color: black;
+        background-color: red;
+        font-family: sans-serif;
+        border: 2px solid black;
+        border-radius: 40px;
+        padding: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="changeText()">
+    <h3>HTML Classes</h3>
+
+    <div class="city">
+      <center>
+        <h2>Delhi</h2>
+        <p>Delhi is the capital of India</p>
+      </center>
+    </div>
+
+    <div class="city">
+      <center>
+        <h2>Karnataka</h2>
+        <p>Bangalore is the caiptal of Karnataka</p>
+      </center>
+    </div>
+    <h2>My HTML <span class="note">Classes</span></h2>
+
+    <h3>HTML ID</h3>
+    <h1 id="myHeader">This is Example of ID</h1>
+    <button onclick="changeText()">changeText</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("myHeader").innerHTML = "Have a nice Day";
+      }
+    </script>
+  </body>
+</html>
